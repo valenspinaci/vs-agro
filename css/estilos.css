@@ -6,7 +6,8 @@
 
 body{
     font-family: 'Mulish', sans-serif;
-    background-color: #fafef4;
+    background: rgb(239,255,223);
+    background: linear-gradient(180deg, rgba(239,255,223,0.8323704481792717) 0%, rgba(239,255,227,0.8743872549019608) 39%, rgba(255,255,255,1) 100%);
 }
 
 .header{
@@ -20,6 +21,35 @@ body{
     flex-wrap: nowrap;
     padding: 1rem 3rem;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.4);
+    animation-name: header;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes header{
+    from{
+        transform: translateY(-200%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.header__logo{
+    animation-name: logo;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes logo{
+    from{
+        transform:translateX(-200%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .contenedor-nav{
@@ -33,6 +63,22 @@ body{
 
 .volver{
     display: none;
+}
+
+.header__nav{
+    animation-name: nav;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes nav{
+    from{
+        transform: translateY(-400%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
 }
 
 .header__nav__lista{
@@ -64,6 +110,22 @@ body{
 
 .header__icono{
     display: none;
+}
+
+.ingresar{
+    animation-name: ingresar;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes ingresar{
+    from{
+        transform:translateX(400%)
+    }
+
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .ingresar a{
@@ -110,6 +172,19 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes aparicion__izquierda{
+    from{
+        transform: translateX(-200%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .titulo__principal{
@@ -147,6 +222,19 @@ main{
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes aparicion__derecha{
+    from{
+        transform: translateX(200%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .presentacion__texto{
@@ -236,6 +324,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .seccion__encontranos{
@@ -247,6 +338,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .seccion__contactanos{
@@ -258,6 +352,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .seccion__servicios{
@@ -268,6 +365,9 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .seccion__texto{
@@ -335,6 +435,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .seccion__valores{
@@ -346,6 +449,9 @@ main{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .cajas{
@@ -405,6 +511,9 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .servicio__comercializacion{
@@ -415,6 +524,9 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .servicio__insumos{
@@ -425,6 +537,9 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .servicio__logistica{
@@ -435,6 +550,9 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .servicio__imagen{
@@ -470,6 +588,19 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes aparicion__derecha{
+    from{
+        transform: translateX(200%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .plantas__oficinas{
@@ -480,6 +611,9 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .plantas__texto{
@@ -574,6 +708,9 @@ main{
     justify-content: flex-end;
     align-items: center;
     text-align: center;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .contacto__texto h1{
@@ -599,6 +736,9 @@ main{
     align-items: center;
     margin-top: 2rem;
     gap: 0.625rem;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .contacto__formulario form{
@@ -635,6 +775,9 @@ main{
     width: 100%;
     height: auto;
     grid-area: imagen;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .contacto__imagen img{
@@ -658,6 +801,9 @@ main{
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .ingreso__texto h1{
@@ -676,6 +822,9 @@ main{
 .ingreso__formulario{
     width: 50%;
     margin: 4rem 0;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .ingreso__formulario form{
@@ -743,6 +892,9 @@ main{
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .registro__texto h1{
@@ -761,6 +913,9 @@ main{
 .registro__formulario{
     width: 50%;
     height: auto;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .registro__formulario form{
@@ -821,6 +976,19 @@ main{
     flex-wrap: nowrap;
     padding: 1rem 6rem;
     box-shadow: 0 -2px 5px rgb(0, 0, 0, 0.4);
+    animation-name: aparicion__footer;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes aparicion__footer{
+    from{
+        transform: translateY(200%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
 }
 
 .footer__left{
@@ -931,6 +1099,34 @@ main{
         font-size: 2.5rem;
         color: #BF9F80;
         display: block;
+        animation-name: hamburguesa;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes hamburguesa {
+        from{
+            transform:translateX(200%)
+        }
+
+        to{
+            transform: translateX(0%);
+        }
+    }
+
+    .contenedor-nav .ingresar{
+        animation-name: desaparicion;
+        animation-duration: 2s;
+    }
+
+    @keyframes desaparicion {
+        from{
+            display: none;
+        }
+
+        to{
+            display: block;
+        }
     }
 
     .enlace__icono{
@@ -1535,6 +1731,19 @@ main{
         font-size: 3rem;
         color: #BF9F80;
         display: block;
+        animation-name: hamburguesa;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+    }
+
+    @keyframes hamburguesa {
+        from{
+            transform:translateX(200%)
+        }
+
+        to{
+            transform: translateX(0%);
+        }
     }
 
     .enlace__icono{
@@ -1563,6 +1772,21 @@ main{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .contenedor-nav .ingresar{
+        animation-name: desaparicion;
+        animation-duration: 2s;
+    }
+
+    @keyframes desaparicion {
+        from{
+            display: none;
+        }
+
+        to{
+            display: block;
+        }
     }
 
     .contenedor-nav .ingresar a{
@@ -2137,6 +2361,22 @@ main{
         text-align: center;
     }
     
+    .ingresar{
+        animation-name: ingresar;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes ingresar{
+        from{
+            transform:translateX(200%)
+        }
+    
+        to{
+            transform: translateX(0%);
+        }
+    }
+
     .ingresar a{
         font-size: 1rem;
         padding: .85rem;
