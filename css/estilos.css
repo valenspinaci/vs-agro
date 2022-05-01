@@ -21,7 +21,6 @@ body{
     transition: 0.5s;
 }
 
-<<<<<<< HEAD
 .header__nav__lista li a{
     font-size: 1.125rem;
     display: block;
@@ -67,8 +66,6 @@ body{
     transition: 0.5s;
 }
 
-=======
->>>>>>> paralelo
 main{
     max-width: 1200px;
     margin: 0 auto;
