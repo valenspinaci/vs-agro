@@ -1254,6 +1254,7 @@ main{
     
     .plantas__imagenes{
         width: 80%;
+        height: auto;
     }
 
     .contacto{
