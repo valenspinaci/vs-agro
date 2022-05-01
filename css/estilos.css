@@ -10,93 +10,14 @@ body{
     background: linear-gradient(180deg, rgba(239,255,223,0.8323704481792717) 0%, rgba(239,255,227,0.8743872549019608) 39%, rgba(255,255,255,1) 100%);
 }
 
-.header{
-    width: 100%;
-    height: auto;
-    background-color: #5B7046;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 1rem 3rem;
-    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.4);
-    animation-name: header;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+.color-boton{
+    background-color: #BF9F80;
+    color: #F0FFD8;
 }
 
-@keyframes header{
-    from{
-        transform: translateY(-200%);
-    }
-
-    to{
-        transform: translateY(0%);
-    }
-}
-
-.header__logo{
-    animation-name: logo;
-    animation-duration: 1.8s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes logo{
-    from{
-        transform:translateX(-200%);
-    }
-
-    to{
-        transform: translateX(0%);
-    }
-}
-
-.contenedor-nav{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.volver{
-    display: none;
-}
-
-.header__nav{
-    animation-name: nav;
-    animation-duration: 1.8s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes nav{
-    from{
-        transform: translateY(-400%);
-    }
-
-    to{
-        transform: translateY(0%);
-    }
-}
-
-.header__nav__lista{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: 2rem;
-}
-
-.header__nav__lista li{
-    list-style-type: none;
-}
-
-.header__nav__lista li a:hover{
-    color: white;
-    transform: scale(1.1);
+.color-boton:hover{
+    background-color: #56423F;
+    color: #F0FFD8;
     transition: 0.5s;
 }
 
@@ -692,9 +613,9 @@ main{
 
 .contacto{
     width: 100%;
-    height: auto;
+    height: 68vh;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 45% 55%;
     grid-template-rows: 40% 60%;
     grid-template-areas: "texto imagen" "form imagen";
 }
@@ -786,7 +707,7 @@ main{
 
 .ingreso{
     width: 100%;
-    height: auto;
+    height: 68vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -876,7 +797,7 @@ main{
 
 .registro{
     width: 100%;
-    height: auto;
+    height: 55vh;
     margin: 4rem 0;
     display: flex;
     flex-direction: row;
@@ -1503,6 +1424,8 @@ main{
     .contacto__formulario{
         justify-content: center;
         gap: 0.5rem;
+        height: auto;
+        z-index: 0;
     }
     
     .contacto__formulario form{
@@ -2138,6 +2061,8 @@ main{
     .contacto__formulario{
         justify-content: center;
         gap: 0.5rem;
+        height: auto;
+        z-index: 0;
     }
     
     .contacto__formulario form{
@@ -2161,6 +2086,7 @@ main{
         flex-direction: column;
         gap: 2rem;
         padding: 2rem;
+        height: 65vh;
     }
     
     .ingreso__texto{
@@ -2211,7 +2137,7 @@ main{
 
     .registro{
         width: 100%;
-        height: auto;
+        height: 50vh;
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
@@ -2478,6 +2404,7 @@ main{
     
     .contacto__formulario{
         margin: 2rem 0;
+        z-index: 0;
     }
     
     .contacto__formulario form input{
@@ -2486,6 +2413,10 @@ main{
     
     .contacto__formulario form button{
         font-size: 1.25rem;
+    }
+
+    .ingreso{
+        height: 68vh;
     }
     
     .ingreso__texto{
@@ -2506,10 +2437,10 @@ main{
     }
     
     .ingreso__formulario form input{
-        font-size: 1.25rem;    }
+        font-size: 1rem;    }
     
     .ingreso__formulario button{
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
     
     .ingreso__formulario p{
@@ -2522,7 +2453,7 @@ main{
 
     .registro{
         width: 100%;
-        height: auto;
+        height: 55vh;
         margin: 3rem 0;
     }
     
