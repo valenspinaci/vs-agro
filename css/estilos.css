@@ -21,51 +21,6 @@ body{
     transition: 0.5s;
 }
 
-.header__nav__lista li a{
-    font-size: 1.125rem;
-    display: block;
-    color: #BEDCA5;
-    text-decoration: none;
-    padding: 0.2rem;
-}
-
-.header__icono{
-    display: none;
-}
-
-.ingresar{
-    animation-name: ingresar;
-    animation-duration: 1.8s;
-    animation-timing-function: ease-out;
-}
-
-@keyframes ingresar{
-    from{
-        transform:translateX(400%)
-    }
-
-    to{
-        transform: translateX(0%);
-    }
-}
-
-.ingresar a{
-    font-size: 1.125rem;
-    display: block;
-    background-color: #BF9F80;
-    padding: 1rem;
-    border-radius: 2rem;
-    color: #5B7046;
-    text-decoration: none;
-}
-
-.ingresar a:hover{
-    background-color:white ;
-    transform: scale(1.1);
-    color: #BF9F80;
-    transition: 0.5s;
-}
-
 main{
     max-width: 1200px;
     margin: 0 auto;
@@ -667,7 +622,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
 }
 
 .contacto__formulario form input{
@@ -834,14 +788,20 @@ main{
 .registro__formulario{
     width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     animation-name: aparicion__derecha;
     animation-duration: 1.8s;
     animation-timing-function: ease-out;
+    margin-bottom: 2rem;
 }
 
 .registro__formulario form{
     width: 100%;
     height: auto;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -850,7 +810,7 @@ main{
 }
 
 .registro__formulario form input{
-    width: 250px;
+    width: 200px;
     height: 1.75rem;
     font-size: 1rem;
     padding: 0.5rem;
@@ -991,110 +951,6 @@ main{
 
 
 @media (max-width:480px) {
-    .header{
-        padding: 2rem;
-    }
-
-    .header__logo{
-        width: 40%;
-        height: auto;
-    }
-    
-    .header__logo img{
-        width: 100%;
-        height: auto;
-    }
-
-    #sidebar{
-        transform: translateX(-100%);
-        background-color: #56423F;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    .header__icono{
-        font-size: 2.5rem;
-        color: #BF9F80;
-        display: block;
-        animation-name: hamburguesa;
-        animation-duration: 1.8s;
-        animation-timing-function: ease-out;
-    }
-
-    @keyframes hamburguesa {
-        from{
-            transform:translateX(200%)
-        }
-
-        to{
-            transform: translateX(0%);
-        }
-    }
-
-    .contenedor-nav .ingresar{
-        animation-name: desaparicion;
-        animation-duration: 2s;
-    }
-
-    @keyframes desaparicion {
-        from{
-            display: none;
-        }
-
-        to{
-            display: block;
-        }
-    }
-
-    .enlace__icono{
-        text-decoration: none;
-    }
-
-    #sidebar:target{
-        transform: translateX(0);
-        transition: 1s;
-    }
-
-    #sidebar .header__nav__lista{
-        height: 100%;
-        padding: 2rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header__nav__lista li a{
-        font-size: 1rem;
-    }
-
-    .contenedor-nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-nav .ingresar a{
-        text-align: center;
-        font-size: 1rem;
-        margin: 1rem 3rem;
-    }
-
-    .volver{
-        margin: 1rem;
-        display: block;
-    }
-
-    .volver a{
-        text-align: center;
-        font-size: 1rem;
-        color: #BEDCA5;
-    }
-
     main{
         max-width: 470px;
         margin: 0 auto;
@@ -1634,103 +1490,6 @@ main{
 }
 
 @media only screen and (min-width:480px) and (max-width:768px){
-
-    .header__logo{
-        width: 40%;
-    }
-
-    #sidebar{
-        transform: translateX(-100%);
-        background-color: #56423F;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        z-index: 1000;
-    }
-
-    .header__icono{
-        font-size: 3rem;
-        color: #BF9F80;
-        display: block;
-        animation-name: hamburguesa;
-        animation-duration: 1.8s;
-        animation-timing-function: ease-out;
-    }
-
-    @keyframes hamburguesa {
-        from{
-            transform:translateX(200%)
-        }
-
-        to{
-            transform: translateX(0%);
-        }
-    }
-
-    .enlace__icono{
-        text-decoration: none;
-    }
-
-    #sidebar:target{
-        transform: translateX(0);
-        transition: 1s;
-    }
-
-    #sidebar .header__nav__lista{
-        height: 100%;
-        padding: 2rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .header__nav__lista li a{
-        font-size: 1.5rem;
-    }
-
-    .contenedor-nav{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor-nav .ingresar{
-        animation-name: desaparicion;
-        animation-duration: 2s;
-    }
-
-    @keyframes desaparicion {
-        from{
-            display: none;
-        }
-
-        to{
-            display: block;
-        }
-    }
-
-    .contenedor-nav .ingresar a{
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
-        margin: 2rem 3rem;
-        border-radius: 6rem;
-    }
-
-    .volver{
-        margin: 1rem;
-        display: block;
-    }
-
-    .volver a{
-        text-align: center;
-        font-size: 1.5rem;
-        color: #BEDCA5;
-    }
-
     main{
         max-width: 768px;
         margin: 0 auto;
@@ -2273,43 +2032,6 @@ main{
 }
 
 @media only screen and (min-width:768px) and (max-width:1024px) {
-    
-    .header{
-        padding: 1rem 2rem;
-    }
-    
-    .header__nav__lista{
-        gap: 1rem;
-    }
-    
-    .header__nav__lista li a{
-        font-size: 1rem;
-        text-align: center;
-    }
-    
-    .ingresar{
-        animation-name: ingresar;
-        animation-duration: 1.8s;
-        animation-timing-function: ease-out;
-    }
-    
-    @keyframes ingresar{
-        from{
-            transform:translateX(200%)
-        }
-    
-        to{
-            transform: translateX(0%);
-        }
-    }
-
-    .ingresar a{
-        font-size: 1rem;
-        padding: .85rem;
-        border-radius: 2rem;
-        margin-left: 1rem;
-    }
-    
     main{
         max-width: 1024px;
         padding: 0 2rem;
