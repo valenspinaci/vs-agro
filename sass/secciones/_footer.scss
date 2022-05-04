@@ -1,0 +1,81 @@
+.footer{
+    width: 100%;
+    height: auto;
+    .contenedor-footer{
+        background-color: #BF9F80;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        padding: 1rem 6rem;
+        box-shadow: 0 -2px 5px rgba(0, 0, 1, 0.326);
+        animation-name: aparicion__footer;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        .footer__left{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            .footer__left__lista{
+                list-style-type: none;
+                font-weight: 200;
+                font-size: 1rem;
+                color: #56423F;
+            }
+        }
+        .superior{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .footer__center{
+                padding-left: 25%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .footer__center__lista{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    list-style-type: none;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #56423F;
+                    li img{
+                        width: 22px;
+                        padding-right: 5px;
+                    }
+                    li a{
+                        text-decoration: none;
+                        color: #56423F;
+                    }
+                }
+            }.footer__right{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .footer__right__lista{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    list-style-type: none;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #56423F;
+                    .footer__right__lista__sede{
+                        font-weight: 700;
+                    } 
+                }
+            }
+        }
+    }    
+}

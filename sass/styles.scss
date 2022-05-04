@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background: rgb(239,255,223);
+    background: linear-gradient(180deg, rgba(239,255,223,0.8323704481792717) 0%, rgba(239,255,227,0.8743872549019608) 39%, rgba(255,255,255,1) 100%);
+}
+
+@import "secciones/header";
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    .contenedor-main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 500 380 500 500 500;
+        grid-template-areas: 
+            "titulo titulo"
+            "presentacion presentacion"
+            "seccion-conocenos seccion-conocenos"
+            "seccion-encontranos seccion-encontranos"
+            "seccion-contactanos seccion-contactanos"
+        ;
+    }
+}
+
+@import "secciones/animaciones";
+@import "secciones/main";
+@import "secciones/footer";
+@import "secciones/media-480";
+@import "secciones/media-768";
+@import "secciones/media-1024";

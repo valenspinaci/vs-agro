@@ -1,0 +1,17 @@
+header{
+    nav{
+        div{
+            div{
+                .color-boton{
+                    background-color: #BF9F80;
+                    color: #F0FFD8;
+                    &:hover{
+                        background-color: #56423F;
+                        color: #F0FFD8;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    };
+}
