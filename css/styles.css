@@ -16,16 +16,6 @@ header nav div div .color-boton {
     color: #F0FFD8;
     transition: 0.5s; }
 
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem; }
-  main .contenedor-main {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 500 380 500 500 500;
-    grid-template-areas: "titulo titulo" "presentacion presentacion" "seccion-conocenos seccion-conocenos" "seccion-encontranos seccion-encontranos" "seccion-contactanos seccion-contactanos"; }
-
 @keyframes aparicion__izquierda {
   from {
     transform: translateX(-200%); }
@@ -43,6 +33,16 @@ main {
     transform: translateY(200%); }
   to {
     transform: translateY(0%); } }
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem; }
+  main .contenedor-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500 380 500 500 500;
+    grid-template-areas: "titulo titulo" "presentacion presentacion" "seccion-conocenos seccion-conocenos" "seccion-encontranos seccion-encontranos" "seccion-contactanos seccion-contactanos"; }
 
 .titulo {
   width: 100%;
