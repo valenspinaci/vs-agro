@@ -89,44 +89,13 @@ main{
         justify-content: space-between;
         align-items: center;
         .presentacion__cajas__calidad{
-            width: 30%;
-            padding: 0 10px 10px 10px;
-            border-radius: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                font-weight: 700;
-                color: #56423F;
-                font-size: 1.5rem;
-            }
-        }.presentacion__cajas__estrategias{
-            width: 30%;
-            padding: 0 10px 10px 10px;
-            border-radius: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                font-weight: 700;
-                color: #56423F;
-                font-size: 1.5rem;
-            }
-        }.presentacion__cajas__seguimiento{
-            width: 30%;
-            padding: 0 10px 10px 10px;
-            border-radius: 1rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h3{
-                font-weight: 700;
-                color: #56423F;
-                font-size: 1.5rem;
-            }
+            @extend .pastillas;
+        }
+        .presentacion__cajas__estrategias{
+            @extend .pastillas;
+        }
+        .presentacion__cajas__seguimiento{
+            @extend .pastillas;
         }
     }
 }
@@ -302,122 +271,73 @@ main{
     }
 }
 
+@mixin sectionContainer ($grid-area, $animation-name){
+    width: 100%;
+    height: auto;
+    grid-area: $grid-area;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: $animation-name;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .seccion__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: 2.5rem;
+            color: #56423F;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: #56423F;
+        }
+        a{
+            font-size: 1.125rem;
+            font-weight: 400;
+            display: block;
+            background-color: #F0FFD8;
+            padding: 1rem;
+            border-radius: 2rem;
+            color: #56423F;
+            text-decoration: none;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+            }
+        }
+    }
+    .seccion__imagen{
+        width: 50%;
+        height: auto;
+    }
+}
+
 .contenedor-nosotros{
     display: grid;
     grid-template-columns: 600 600;
     grid-template-rows: 500 500 500 840;
     grid-template-areas: "titulo titulo" "seccion-vision seccion-vision" "seccion-valores seccion-valores" "cajas cajas";
     .seccion__vision{
-        width: 100%;
-        height: auto;
-        grid-area: seccion-vision;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        animation-name: aparicion__derecha;
-        animation-duration: 1.8s;
-        animation-timing-function: ease-out;
-        .seccion__texto{
-            width: 50%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 0.625rem;
-            h1{
-                font-size: 2.5rem;
-                color: #56423F;
-                font-weight: 700;
-            }
-            p{
-                font-size: 1.25rem;
-                font-weight: 400;
-                color: #68524e;
-            }
-            h2{
-                font-weight: 700;
-                font-size: 1.75rem;
-                color: #56423F;
-            }
-            a{
-                font-size: 1.125rem;
-                font-weight: 400;
-                display: block;
-                background-color: #F0FFD8;
-                padding: 1rem;
-                border-radius: 2rem;
-                color: #56423F;
-                text-decoration: none;
-                &:hover{
-                    background-color: #56423F;
-                    color: #F0FFD8;
-                    transition: 0.5s;
-                }
-            }
-        }
-        .seccion__imagen{
-            width: 50%;
-            height: auto;
-        }
+        @include sectionContainer (seccion-vision, aparicion__derecha);
     }
     .seccion__valores{
-        width: 100%;
-        height: auto;
-        grid-area: seccion-valores;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        animation-name: aparicion__izquierda;
-        animation-duration: 1.8s;
-        animation-timing-function: ease-out;
-        .seccion__texto{
-            width: 50%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 0.625rem;
-            h1{
-                font-size: 2.5rem;
-                color: #56423F;
-                font-weight: 700;
-            }
-            p{
-                font-size: 1.25rem;
-                font-weight: 400;
-                color: #68524e;
-            }
-            h2{
-                font-weight: 700;
-                font-size: 1.75rem;
-                color: #56423F;
-            }
-            a{
-                font-size: 1.125rem;
-                font-weight: 400;
-                display: block;
-                background-color: #F0FFD8;
-                padding: 1rem;
-                border-radius: 2rem;
-                color: #56423F;
-                text-decoration: none;
-                &:hover{
-                    background-color: #56423F;
-                    color: #F0FFD8;
-                    transition: 0.5s;
-                }
-            }
-        }
-        .seccion__imagen{
-            width: 50%;
-            height: auto;
-        }
+        @include sectionContainer (seccion-valores, aparicion__izquierda);
     }
     .cajas{
         width: 100%;
@@ -653,6 +573,12 @@ main{
             font-size: 1.25rem;
             color: #68524e;
         }
+    }
+}
+
+@each $mayus in (span) {
+    #{$mayus}{
+        font-weight: bold;
     }
 }
 
@@ -1062,5 +988,20 @@ main{
             color: #56423F;
             font-size: 1rem;
         }
+    }
+}
+
+.pastillas{
+    width: 30%;
+    padding: 0 10px 10px 10px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-weight: 700;
+        color: #56423F;
+        font-size: 1.5rem;
     }
 }

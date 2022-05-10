@@ -108,42 +108,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
-    .presentacion .presentacion__cajas .presentacion__cajas__calidad {
-      width: 30%;
-      padding: 0 10px 10px 10px;
-      border-radius: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .presentacion .presentacion__cajas .presentacion__cajas__calidad h3 {
-        font-weight: 700;
-        color: #56423F;
-        font-size: 1.5rem; }
-    .presentacion .presentacion__cajas .presentacion__cajas__estrategias {
-      width: 30%;
-      padding: 0 10px 10px 10px;
-      border-radius: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .presentacion .presentacion__cajas .presentacion__cajas__estrategias h3 {
-        font-weight: 700;
-        color: #56423F;
-        font-size: 1.5rem; }
-    .presentacion .presentacion__cajas .presentacion__cajas__seguimiento {
-      width: 30%;
-      padding: 0 10px 10px 10px;
-      border-radius: 1rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .presentacion .presentacion__cajas .presentacion__cajas__seguimiento h3 {
-        font-weight: 700;
-        color: #56423F;
-        font-size: 1.5rem; }
 
 .seccion__conocenos {
   width: 100%;
@@ -595,6 +559,9 @@ main {
       font-size: 1.25rem;
       color: #68524e; }
 
+span {
+  font-weight: bold; }
+
 .plantas__campo {
   width: 100%;
   height: auto;
@@ -941,6 +908,19 @@ main {
       text-align: center;
       color: #56423F;
       font-size: 1rem; }
+
+.pastillas, .presentacion .presentacion__cajas .presentacion__cajas__calidad, .presentacion .presentacion__cajas .presentacion__cajas__estrategias, .presentacion .presentacion__cajas .presentacion__cajas__seguimiento {
+  width: 30%;
+  padding: 0 10px 10px 10px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .pastillas h3, .presentacion .presentacion__cajas .presentacion__cajas__calidad h3, .presentacion .presentacion__cajas .presentacion__cajas__estrategias h3, .presentacion .presentacion__cajas .presentacion__cajas__seguimiento h3 {
+    font-weight: 700;
+    color: #56423F;
+    font-size: 1.5rem; }
 
 .footer {
   width: 100%;
