@@ -16,6 +16,18 @@ main{
     }
 }
 
+$headings: (
+    h1: 2.5rem,
+    h2:2rem,
+    h3:1.5rem,
+);
+
+$h1: map-get($headings, h1);
+
+$h2: map-get($headings, h2);
+
+$h3: map-get($headings , h3);
+
 .titulo{
     width: 100%;
     grid-area: titulo;
@@ -36,7 +48,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h1{
-            font-size: 2.5rem;
+            font-size: $h1;
             font-weight: 700;
             color: #56423F;
         }
@@ -73,7 +85,7 @@ main{
         gap: 0.625rem;
         h2{
             font-weight: 700;
-            font-size: 2rem;
+            font-size: $h2;
             color: #56423F;
         }
         p{
@@ -125,7 +137,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h1{
-            font-size: 2.5rem;
+            font-size: $h1;
             color: #56423F;
             font-weight: 700;
         }
@@ -136,7 +148,7 @@ main{
         }
         h2{
             font-weight: 700;
-            font-size: 1.75rem;
+            font-size: $h2;
             color: #56423F;
         }
         a{
@@ -178,7 +190,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h1{
-            font-size: 2.5rem;
+            font-size: $h1;
             color: #56423F;
             font-weight: 700;
         }
@@ -189,7 +201,7 @@ main{
         }
         h2{
             font-weight: 700;
-            font-size: 1.75rem;
+            font-size: $h2;
             color: #56423F;
         }
         a{
@@ -239,7 +251,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h1{
-            font-size: 2.5rem;
+            font-size: $h1;
             color: #56423F;
             font-weight: 700;
         }
@@ -250,7 +262,7 @@ main{
         }
         h2{
             font-weight: 700;
-            font-size: 1.75rem;
+            font-size: $h2;
             color: #56423F;
         }
         a{
@@ -292,7 +304,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h1{
-            font-size: 2.5rem;
+            font-size: $h1;
             color: #56423F;
             font-weight: 700;
         }
@@ -303,7 +315,7 @@ main{
         }
         h2{
             font-weight: 700;
-            font-size: 1.75rem;
+            font-size: $h2;
             color: #56423F;
         }
         a{
@@ -349,7 +361,7 @@ main{
         align-items: center;
         gap: 2rem;
         h1{
-            font-size: 2rem;
+            font-size: $h1;
             font-weight: 700;
             color: #56423F;
         }
@@ -405,7 +417,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h1{
-            font-size: 2.5rem;
+            font-size: $h1;
             color: #56423F;
             font-weight: 700;
         }
@@ -416,7 +428,7 @@ main{
         }
         h2{
             font-weight: 700;
-            font-size: 1.75rem;
+            font-size: $h2;
             color: #56423F;
         }
         a{
@@ -463,7 +475,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h2{
-            font-size: 2rem;
+            font-size: $h2;
             font-weight: 700;
             color: #56423F;
         }
@@ -497,7 +509,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h2{
-            font-size: 2rem;
+            font-size: $h2;
             font-weight: 700;
             color: #56423F;
         }
@@ -531,7 +543,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h2{
-            font-size: 2rem;
+            font-size: $h2;
             font-weight: 700;
             color: #56423F;
         }
@@ -565,7 +577,7 @@ main{
         align-items: flex-start;
         gap: 0.625rem;
         h2{
-            font-size: 2rem;
+            font-size: $h2;
             font-weight: 700;
             color: #56423F;
         }
@@ -603,7 +615,7 @@ main{
         align-items: flex-start;
         gap: 1rem;
         h2{
-            font-size: 2rem;
+            font-size: $h2;
             font-weight: 700;
             color: #56423F;
         }
@@ -685,7 +697,7 @@ main{
         align-items: flex-start;
         gap: 1rem;
         h2{
-            font-size: 2rem;
+            font-size: $h2;
             font-weight: 700;
             color: #56423F;
         }
@@ -767,7 +779,7 @@ main{
         animation-duration: 1.8s;
         animation-timing-function: ease-out;
         h1{
-            font-size: 3rem;
+            font-size: $h1;
             font-weight: 700;
             color: #56423F;
         }
@@ -847,7 +859,7 @@ main{
         animation-duration: 1.8s;
         animation-timing-function: ease-out;
         h1{
-            font-size: 3rem;
+            font-size: $h1;
             font-weight: 700;
             color: #56423F;
         }
@@ -927,7 +939,7 @@ main{
         animation-duration: 1.8s;
         animation-timing-function: ease-out;
         h1{
-            font-size: 3rem;
+            font-size: $h1;
             font-weight: 700;
             color: #56423F;
         }
@@ -1002,6 +1014,6 @@ main{
     h3{
         font-weight: 700;
         color: #56423F;
-        font-size: 1.5rem;
+        font-size: $h3;
     }
 }

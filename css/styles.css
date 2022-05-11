@@ -142,7 +142,7 @@ main {
       color: #68524e; }
     .seccion__conocenos .seccion__texto h2 {
       font-weight: 700;
-      font-size: 1.75rem;
+      font-size: 2rem;
       color: #56423F; }
     .seccion__conocenos .seccion__texto a {
       font-size: 1.125rem;
@@ -188,7 +188,7 @@ main {
       color: #68524e; }
     .seccion__encontranos .seccion__texto h2 {
       font-weight: 700;
-      font-size: 1.75rem;
+      font-size: 2rem;
       color: #56423F; }
     .seccion__encontranos .seccion__texto a {
       font-size: 1.125rem;
@@ -240,7 +240,7 @@ main {
       color: #68524e; }
     .seccion__contactanos .seccion__texto h2 {
       font-weight: 700;
-      font-size: 1.75rem;
+      font-size: 2rem;
       color: #56423F; }
     .seccion__contactanos .seccion__texto a {
       font-size: 1.125rem;
@@ -291,7 +291,7 @@ main {
         color: #68524e; }
       .contenedor-nosotros .seccion__vision .seccion__texto h2 {
         font-weight: 700;
-        font-size: 1.75rem;
+        font-size: 2rem;
         color: #56423F; }
       .contenedor-nosotros .seccion__vision .seccion__texto a {
         font-size: 1.125rem;
@@ -339,7 +339,7 @@ main {
         color: #68524e; }
       .contenedor-nosotros .seccion__valores .seccion__texto h2 {
         font-weight: 700;
-        font-size: 1.75rem;
+        font-size: 2rem;
         color: #56423F; }
       .contenedor-nosotros .seccion__valores .seccion__texto a {
         font-size: 1.125rem;
@@ -367,7 +367,7 @@ main {
     align-items: center;
     gap: 2rem; }
     .contenedor-nosotros .cajas h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: 700;
       color: #56423F; }
     .contenedor-nosotros .cajas .cajas__numeros {
@@ -425,7 +425,7 @@ main {
       color: #68524e; }
     .seccion__servicios .seccion__texto h2 {
       font-weight: 700;
-      font-size: 1.75rem;
+      font-size: 2rem;
       color: #56423F; }
     .seccion__servicios .seccion__texto a {
       font-size: 1.125rem;
@@ -719,7 +719,7 @@ span {
     animation-duration: 1.8s;
     animation-timing-function: ease-out; }
     .contacto .contacto__texto h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 700;
       color: #56423F; }
     .contacto .contacto__texto p {
@@ -788,7 +788,7 @@ span {
     animation-duration: 1.8s;
     animation-timing-function: ease-out; }
     .ingreso .ingreso__texto h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 700;
       color: #56423F; }
     .ingreso .ingreso__texto p {
@@ -856,7 +856,7 @@ span {
     animation-duration: 1.8s;
     animation-timing-function: ease-out; }
     .registro .registro__texto h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 700;
       color: #56423F; }
     .registro .registro__texto p {
