@@ -1,5 +1,3 @@
-<img width="1506" alt="Captura de pantalla 2025-04-16 a la(s) 13 38 34" src="https://github.com/user-attachments/assets/93510c3f-241c-42d1-9f7f-4267963a5574" /># 🌾 VS-Agro
-
 **VS-Agro** es mi primer proyecto de desarrollo frontend. Una web institucional para una empresa del sector rural, pensada para comunicar de forma clara y visual sus servicios y su identidad.
 
 ---
