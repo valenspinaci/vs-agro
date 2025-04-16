@@ -1,0 +1,235 @@
+@media only screen and (min-width:768px) and (max-width:1024px){
+main{
+    max-width: 1024px;
+    padding: 0 2rem;
+}
+
+.titulo{
+    .titulo__principal{
+        height: auto;
+    }
+    .titulo__imagen{
+        .titulo__imagen img{
+            width: 100%;
+        }
+    }
+}
+
+.presentacion{
+    .presentacion__cajas{
+        .presentacion__cajas__calidad{
+            h3{
+                text-align: center;
+            }
+        }
+        .presentacion__cajas__estrategias{
+            h3{
+                text-align: center;
+            }
+        }
+        .presentacion__cajas__seguimiento{
+            h3{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.seccion__conocenos{
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagen{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.seccion__encontranos{
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagen{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.seccion__contactanos{
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagen{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.seccion__servicios{
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagen{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.seccion__vision{
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagen{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.seccion__valores{
+    .seccion__texto{
+        width: 50%;
+    }
+    .seccion__imagen{
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.contenedor-nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400 500 500 840;
+    grid-template-areas: "titulo titulo" "seccion-vision seccion-vision" "seccion-valores seccion-valores" "cajas cajas";
+    .cajas{
+        width: 100%;
+        height: auto;
+        grid-area: cajas;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        .cajas__numeros{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            div{
+                width: 30%;
+                height: 180px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .cajas__numeros__grandes{
+                font-size: 2rem;
+                font-weight: 700;
+                color: #56423F;
+            }
+            .cajas__numeros__escrito{
+                font-size: 1.125rem;
+                font-weight: 400;
+                color: #68524e;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contacto{
+    height: auto;
+    margin-bottom: 2rem;
+    .contacto__texto{
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 1rem;
+        }
+    }
+    .contacto__formulario{
+        z-index: 0;
+        padding-bottom: 4rem;
+    }
+    .contacto__formulario form{
+        input{
+            font-size: 1rem;
+        }
+        button{
+            font-size: 1rem;
+        }
+    }
+}
+
+.ingreso{
+    height: 68vh;
+    .ingreso__texto{
+        height: auto;
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .ingreso__formulario{
+        margin: 3rem 0;
+        form{
+            width: 100%;
+            height: auto;
+            input{
+                font-size: 1rem;    
+            }
+        }
+        .ingreso__formulario button{
+            font-size: 1rem;
+        }
+        .ingreso__formulario p{
+            text-align: center;
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.registro{
+    width: 100%;
+    height: 55vh;
+    margin: 3rem 0;
+    .registro__texto{
+        height: auto;
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    .registro__formulario{
+        width: 50%;
+        height: auto;
+        form{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.contenedor-footer{
+    .superior{
+        .footer__right{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 100px;
+        }
+    }
+}
+}

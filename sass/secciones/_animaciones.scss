@@ -1,0 +1,29 @@
+@keyframes aparicion__izquierda{
+    from{
+        transform: translateX(-200%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes aparicion__derecha{
+    from{
+        transform: translateX(200%);
+    }
+
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes aparicion__footer{
+    from{
+        transform: translateY(200%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}

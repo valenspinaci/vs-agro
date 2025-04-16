@@ -1,0 +1,1019 @@
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    .contenedor-main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 500 380 500 500 500;
+        grid-template-areas: 
+            "titulo titulo"
+            "presentacion presentacion"
+            "seccion-conocenos seccion-conocenos"
+            "seccion-encontranos seccion-encontranos"
+            "seccion-contactanos seccion-contactanos"
+        ;
+    }
+}
+
+$headings: (
+    h1: 2.5rem,
+    h2:2rem,
+    h3:1.5rem,
+);
+
+$h1: map-get($headings, h1);
+
+$h2: map-get($headings, h2);
+
+$h3: map-get($headings , h3);
+
+.titulo{
+    width: 100%;
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .titulo__principal{
+        width: 50%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: $h1;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+    }
+    .titulo__imagen{
+        width: 50%;
+    }
+}
+
+.presentacion{
+    width: 100%;
+    height: 380px;
+    grid-area: presentacion;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .presentacion__texto{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h2{
+            font-weight: 700;
+            font-size: $h2;
+            color: #56423F;
+        }
+        p{
+            font-weight: 400;
+            font-size: 1.25rem;
+            color: #68524e;
+        }
+    }
+    .presentacion__cajas{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .presentacion__cajas__calidad{
+            @extend .pastillas;
+        }
+        .presentacion__cajas__estrategias{
+            @extend .pastillas;
+        }
+        .presentacion__cajas__seguimiento{
+            @extend .pastillas;
+        }
+    }
+}
+
+.seccion__conocenos{
+    width: 100%;
+    height: 500px;
+    grid-area: seccion-conocenos;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .seccion__imagen{
+        width: 50%;
+        height: auto;
+    }
+    .seccion__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: $h1;
+            color: #56423F;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+        h2{
+            font-weight: 700;
+            font-size: $h2;
+            color: #56423F;
+        }
+        a{
+            font-size: 1.125rem;
+            font-weight: 400;
+            display: block;
+            background-color: #F0FFD8;
+            padding: 1rem;
+            border-radius: 2rem;
+            color: #56423F;
+            text-decoration: none;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+.seccion__encontranos{
+    width: 100%;
+    height: 500px;
+    grid-area: seccion-encontranos;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .seccion__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: $h1;
+            color: #56423F;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+        h2{
+            font-weight: 700;
+            font-size: $h2;
+            color: #56423F;
+        }
+        a{
+            font-size: 1.125rem;
+            font-weight: 400;
+            display: block;
+            background-color: #F0FFD8;
+            padding: 1rem;
+            border-radius: 2rem;
+            color: #56423F;
+            text-decoration: none;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+            }
+        }
+    }
+    .seccion__imagen{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.seccion__contactanos{
+    width: 100%;
+    height: 500px;
+    grid-area: seccion-contactanos;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .seccion__imagen{
+        width: 50%;
+        height: auto;
+    }
+    .seccion__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: $h1;
+            color: #56423F;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+        h2{
+            font-weight: 700;
+            font-size: $h2;
+            color: #56423F;
+        }
+        a{
+            font-size: 1.125rem;
+            font-weight: 400;
+            display: block;
+            background-color: #F0FFD8;
+            padding: 1rem;
+            border-radius: 2rem;
+            color: #56423F;
+            text-decoration: none;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@mixin sectionContainer ($grid-area, $animation-name){
+    width: 100%;
+    height: auto;
+    grid-area: $grid-area;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: $animation-name;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .seccion__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: $h1;
+            color: #56423F;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+        h2{
+            font-weight: 700;
+            font-size: $h2;
+            color: #56423F;
+        }
+        a{
+            font-size: 1.125rem;
+            font-weight: 400;
+            display: block;
+            background-color: #F0FFD8;
+            padding: 1rem;
+            border-radius: 2rem;
+            color: #56423F;
+            text-decoration: none;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+            }
+        }
+    }
+    .seccion__imagen{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.contenedor-nosotros{
+    display: grid;
+    grid-template-columns: 600 600;
+    grid-template-rows: 500 500 500 840;
+    grid-template-areas: "titulo titulo" "seccion-vision seccion-vision" "seccion-valores seccion-valores" "cajas cajas";
+    .seccion__vision{
+        @include sectionContainer (seccion-vision, aparicion__derecha);
+    }
+    .seccion__valores{
+        @include sectionContainer (seccion-valores, aparicion__izquierda);
+    }
+    .cajas{
+        width: 100%;
+        height: auto;
+        grid-area: cajas;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        h1{
+            font-size: $h1;
+            font-weight: 700;
+            color: #56423F;
+        }
+        .cajas__numeros{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            div{
+                width: 30%;
+                height: 180px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .cajas__numeros__grandes{
+                font-size: 2rem;
+                font-weight: 700;
+                color: #56423F;
+            }
+            .cajas__numeros__escrito{
+                font-size: 1.125rem;
+                font-weight: 400;
+                color: #68524e;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.seccion__servicios{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .seccion__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h1{
+            font-size: $h1;
+            color: #56423F;
+            font-weight: 700;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+        }
+        h2{
+            font-weight: 700;
+            font-size: $h2;
+            color: #56423F;
+        }
+        a{
+            font-size: 1.125rem;
+            font-weight: 400;
+            display: block;
+            background-color: #F0FFD8;
+            padding: 1rem;
+            border-radius: 2rem;
+            color: #56423F;
+            text-decoration: none;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+            }
+        }
+    }
+    .seccion__imagen{
+        width: 50%;
+        height: auto;
+    }
+}
+
+.servicio__asesoria{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .servicio__imagen{
+        width: 20%;
+    }
+    .servicio__texto{
+        width: 80%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h2{
+            font-size: $h2;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            color: #68524e;
+        }
+    }
+}
+
+.servicio__comercializacion{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .servicio__imagen{
+        width: 20%;
+    }
+    .servicio__texto{
+        width: 80%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h2{
+            font-size: $h2;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            color: #68524e;
+        }
+    }
+}
+
+.servicio__insumos{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .servicio__imagen{
+        width: 20%;
+    }
+    .servicio__texto{
+        width: 80%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h2{
+            font-size: $h2;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            color: #68524e;
+        }
+    }
+}
+
+.servicio__logistica{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .servicio__imagen{
+        width: 20%;
+    }
+    .servicio__texto{
+        width: 80%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.625rem;
+        h2{
+            font-size: $h2;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            color: #68524e;
+        }
+    }
+}
+
+@each $mayus in (span) {
+    #{$mayus}{
+        font-weight: bold;
+    }
+}
+
+.plantas__campo{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__derecha;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .plantas__texto{
+        width: 50%;
+        height: auto;
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        h2{
+            font-size: $h2;
+            font-weight: 700;
+            color: #56423F;
+        }
+        ul{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+    }
+    .plantas__imagenes{
+        width: 50%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 3 1fr;
+        grid-template-rows: 4 1fr;
+        grid-template-areas: "ele1 ele2 ele3" "ele1 ele4 ele3" "ele1 ele4 ele3" "ele5 ele5 ele3";
+        gap: 1rem;
+        margin-bottom: 1rem;
+        .grilla1{
+            width: 100%;
+            height: 100%;
+            grid-area: ele1;
+            object-fit: cover;
+        }
+        
+        .grilla2{
+            width: 100%;
+            height: 100%;
+            grid-area: ele2;
+            object-fit: cover;
+        }
+        
+        .grilla3{
+            width: 100%;
+            height: 100%;
+            grid-area: ele3;
+            object-fit: cover;
+        }
+        
+        .grilla4{
+            width: 100%;
+            height: 100%;
+            grid-area: ele4;
+            object-fit: cover;
+        }
+        
+        .grilla5{
+            width: 100%;
+            height: 100%;
+            grid-area: ele5;
+            object-fit: cover;
+        }
+    }
+}
+
+.plantas__oficinas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    animation-name: aparicion__izquierda;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
+    .plantas__texto{
+        width: 50%;
+        height: auto;
+        margin: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        h2{
+            font-size: $h2;
+            font-weight: 700;
+            color: #56423F;
+        }
+        ul{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+    }
+    .plantas__imagenes{
+        width: 50%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 3 1fr;
+        grid-template-rows: 4 1fr;
+        grid-template-areas: "ele1 ele2 ele3" "ele1 ele4 ele3" "ele1 ele4 ele3" "ele5 ele5 ele3";
+        gap: 1rem;
+        margin-bottom: 1rem;
+        .grilla1{
+            width: 100%;
+            height: 100%;
+            grid-area: ele1;
+            object-fit: cover;
+        }
+        
+        .grilla2{
+            width: 100%;
+            height: 100%;
+            grid-area: ele2;
+            object-fit: cover;
+        }
+        
+        .grilla3{
+            width: 100%;
+            height: 100%;
+            grid-area: ele3;
+            object-fit: cover;
+        }
+        
+        .grilla4{
+            width: 100%;
+            height: 100%;
+            grid-area: ele4;
+            object-fit: cover;
+        }
+        
+        .grilla5{
+            width: 100%;
+            height: 100%;
+            grid-area: ele5;
+            object-fit: cover;
+        }
+    }
+}
+
+.contacto{
+    width: 100%;
+    height: 68vh;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: "texto imagen" "form imagen";
+    .contacto__texto{
+        width: 100%;
+        height: auto;
+        grid-area: texto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        animation-name: aparicion__izquierda;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        h1{
+            font-size: $h1;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+            text-align: center;
+        }
+    }
+    .contacto__formulario{
+        width: 100%;
+        height: auto;
+        grid-area: form;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        animation-name: aparicion__izquierda;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 250px;
+                height: 1.75rem;
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+            button{
+                font-size: 1rem;
+                padding: 3px;
+                background-color: #F0FFD8;
+                color: #56423F;
+                border: solid 2px #56423F;
+                &:hover{
+                    background-color: #56423F;
+                    color: #F0FFD8;
+                    transition: 0.5s;
+                    border: solid 2px #F0FFD8;
+                }
+            }
+        }
+    }
+    .contacto__imagen{
+        width: 100%;
+        height: auto;
+        grid-area: imagen;
+        animation-name: aparicion__derecha;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+.ingreso{
+    width: 100%;
+    height: 68vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .ingreso__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        animation-name: aparicion__izquierda;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        h1{
+            font-size: $h1;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+            text-align: center;
+        }
+    }
+    .ingreso__formulario{
+        width: 50%;
+        margin: 4rem 0;
+        animation-name: aparicion__derecha;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        form{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            input{
+                width: 250px;
+                height: 1.75rem;
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+        }
+        button{
+            font-size: 1rem;
+            padding: 3px;
+            background-color: #F0FFD8;
+            color: #56423F;
+            border: solid 2px #56423F;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+                border: solid 2px #F0FFD8;
+            }
+        }
+        hr{
+            height: 5px;
+            width: 70%;
+            background-color: #56423F;
+        }
+        p{
+            text-align: center;
+            a{
+                font-size: 13px;
+                color: #56423F;
+            }
+        }
+    }
+}
+
+.registro{
+    width: 100%;
+    height: 55vh;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .registro__texto{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        animation-name: aparicion__izquierda;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        h1{
+            font-size: $h1;
+            font-weight: 700;
+            color: #56423F;
+        }
+        p{
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: #68524e;
+            text-align: center;
+        }
+    }
+    .registro__formulario{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation-name: aparicion__derecha;
+        animation-duration: 1.8s;
+        animation-timing-function: ease-out;
+        margin-bottom: 2rem;
+        form{
+            width: 100%;
+            height: auto;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            input{
+                width: 200px;
+                height: 1.75rem;
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+        }
+        button{
+            font-size: 1rem;
+            padding: 3px;
+            background-color: #F0FFD8;
+            color: #56423F;
+            border: solid 2px #56423F;
+            &:hover{
+                background-color: #56423F;
+                color: #F0FFD8;
+                transition: 0.5s;
+                border: solid 2px #F0FFD8;
+            }
+        }
+        hr{
+            height: 5px;
+            width: 70%;
+            background-color: #56423F;
+        }
+        p{
+            text-align: center;
+            color: #56423F;
+            font-size: 1rem;
+        }
+    }
+}
+
+.pastillas{
+    width: 30%;
+    padding: 0 10px 10px 10px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        font-weight: 700;
+        color: #56423F;
+        font-size: $h3;
+    }
+}
